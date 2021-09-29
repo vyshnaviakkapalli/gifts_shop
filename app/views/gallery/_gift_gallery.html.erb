@@ -1,0 +1,26 @@
+<section class="shop_section layout_padding">
+    <div class="container" >
+<h1 align="middle">Latest products</h1>
+<table>
+	<tr>
+		<% count=0 %>
+		<% @gifts.each do |gift| %>
+		<% if (count%4)==0 %>
+
+	</tr>
+	<tr>
+		<% end %>
+		<% count+=1 %>
+		
+		<td><%= image_tag gift.product_image,height: "280",width: "280" ,:class=>"img-box", :class=>"row",:class=>"col-sm-6 col-md-4 col-lg-3",:class=>"box"%><br>
+			
+		Name:<%= gift.name %><br>
+		price:<%= gift.price %><br>
+		color:<%= gift.color %><br>
+		model:<%= gift.model %>
+		<%= button_to 'Add to cart',line_items_path(:store_id=>gift.id),:class=>"btn btn-success" %></td>
+		<% end %>
+	</tr>
+</table>
+</div>
+</section>

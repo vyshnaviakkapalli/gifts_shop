@@ -1,0 +1,20 @@
+<section class="shop_section layout_padding">
+    <div class="container" >
+<h2>Resend unlock instructions</h2>
+
+<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>"col-md-6 col-lg-5 px-0" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Resend unlock instructions" , :class=>"btn btn-danger"%>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+</section>

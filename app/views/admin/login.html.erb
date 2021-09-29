@@ -1,0 +1,20 @@
+<section class="shop_section layout_padding" >
+    <div class="container" >
+<h3>admin</h3>
+<h2><%= notice %></h2>
+
+
+<%= form_with do |form| %>
+ <section class="contact_section ">
+  <%= form.label :user_name %>
+  <%= form.text_field :name,:class=>"col-md-6 col-lg-5 px-0"  %></br>
+  <%= form.label :password %>
+  <%= form.password_field :password ,:class=>"col-md-6 col-lg-5 px-0" %><br>
+</section>
+  <div class="actions">
+  		<%= form.submit "Login", :class=>"btn btn-danger" %>
+  	</div>
+<% end %>
+
+</div>
+</section>
