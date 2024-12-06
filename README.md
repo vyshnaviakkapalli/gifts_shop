@@ -5,22 +5,36 @@ Project Presentation URL: https://github.com/vyshnaviakkapalli/gifts_shop/blob/m
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Requirements
 
-* Ruby version
+Ruby Version
+Ruby 2.7.6 or higher is recommended.
+System Dependencies
+Rails 6.1.4 or higher.
+PostgreSQL 12.0 or higher for the database.
+Redis for caching.
+Node.js 12.x or higher.
+Yarn for managing front-end assets.
+Setup and Configuration
 
-* System dependencies
+Clone the Repository
+#git clone https://github.com/vyshnaviakkapalli/gifts_shop.git
+#cd gifts_shop
 
-* Configuration
+Install Dependencies
+Install the required gems:
+#bundle install
+#yarn install
 
-* Database creation
+Database Setup
+Create and migrate the database:
+#rails db:create
+#rails db:migrate
 
-* Database initialization
+Seed the database with sample data:
+#rails db:seed
 
-* How to run the test suite
+Running the Application
+Start the Rails Server
+#rails server
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
