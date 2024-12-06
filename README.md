@@ -1,5 +1,7 @@
 # README
 
+Project Presentation URL: https://github.com/vyshnaviakkapalli/gifts_shop/blob/main/ecommerce_project_vyshnavi_akkapalli.pdf
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
